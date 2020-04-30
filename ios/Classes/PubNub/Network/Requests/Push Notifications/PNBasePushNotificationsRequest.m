@@ -88,7 +88,8 @@ NS_ASSUME_NONNULL_END
         [parameters addQueryParameter:topic forFieldName:@"topic"];
     }
     
-    [parameters addPathComponent:token.lowercaseString forPlaceholder:@"{token}"];    
+    //[parameters addPathComponent:token.lowercaseString forPlaceholder:@"{token}"];    
+    [parameters addPathComponent:token forPlaceholder:@"{token}"];    
     [parameters addQueryParameter:tokenType forFieldName:@"type"];
     
     return parameters;
